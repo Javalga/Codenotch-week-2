@@ -24,8 +24,7 @@ class Person {
     this.imc = `${imc}%`;
     return imc;
   }
-  calcAge() {
-    let currentYear = 2022;
+  calcAge(currentYear) {
     return currentYear - this.yearOfBirth;
   }
   printAll() {
@@ -34,13 +33,10 @@ class Person {
     }
   }
   printHobbies() {
-    for(let hobbie of this.hobbies){
+    for (let hobbie of this.hobbies) {
       console.log(hobbie);
     }
   }
 }
 
-
-
-
-module.exports = {Person}
+module.exports = { Person };

@@ -12,7 +12,7 @@ let person1 = new Person(
 );
 
 person1.calcImc();
-let person1Age = person1.calcAge();
+let person1Age = person1.calcAge(2022);
 console.log(person1Age);
 person1.printAll();
 person1.printHobbies();
