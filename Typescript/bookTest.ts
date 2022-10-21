@@ -26,3 +26,7 @@ console.log(myBook.getnPages());
 console.log(myBook.getIsbn());
 console.log(myBook.getAuthor());
 console.log(myBook.getEditorial());
+
+// methods test
+
+console.log(myBook.toString());

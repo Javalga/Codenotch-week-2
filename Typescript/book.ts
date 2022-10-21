@@ -50,11 +50,7 @@ export class Book {
     this.editorial = editorial;
   }
   //methods
-  public toSimplifiedString(): string {
-    return `Title - ${this.title}
-            Number of pages - ${this.nPages}
-            ISBN - ${this.isbn}
-            Author - ${this.author}
-            Editorial - ${this.editorial}`;
+  public toString(): string {
+    return `\n\nTitle - ${this.title}\nNumber of pages - ${this.nPages}\nISBN - ${this.isbn}\nAuthor - ${this.author}Editorial - ${this.editorial}`;
   }
 }
