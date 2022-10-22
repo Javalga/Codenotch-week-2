@@ -1,4 +1,4 @@
-const zodiacSign = (day: number, month: number): string => {
+export const zodiacSign = (day: number, month: number): string => {
   if ((day >= 22 && month === 12) || (day <= 21 && month === 1)) {
     return 'Capricorn'
   } else if ((day >= 21 && month === 1) || (day <= 20 && month === 2)) {

@@ -6,4 +6,4 @@ export const addWords = (words: string[]) => {
   return accumulated
 }
 
-console.log(addWords(['Hello', 'my', 'name', 'is', 'Javi']));
+addWords(['Hello', 'my', 'name', 'is', 'Javi']);

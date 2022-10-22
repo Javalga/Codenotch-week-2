@@ -3,5 +3,3 @@ export const isEven = (num: number): void => {
     console.log(`${num} is even`)
   } else console.log(`${num} is odd`);
 }
-
-isEven(82137)

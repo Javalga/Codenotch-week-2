@@ -9,4 +9,3 @@ var isEven = function (num) {
         console.log("".concat(num, " is odd"));
 };
 exports.isEven = isEven;
-(0, exports.isEven)(82137);
