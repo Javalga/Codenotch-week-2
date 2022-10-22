@@ -9,4 +9,4 @@ var addWords = function (words) {
     return accumulated;
 };
 exports.addWords = addWords;
-console.log((0, exports.addWords)(['Hello', 'my', 'name', 'is', 'Javi']));
+(0, exports.addWords)(['Hello', 'my', 'name', 'is', 'Javi']);
