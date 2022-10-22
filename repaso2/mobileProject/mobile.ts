@@ -36,4 +36,8 @@ export class Mobile {
   public getPrice() {
     return this.price
   }
+  public toString() {
+    console.log(`\nThe caracteristics of the mobile are:\nName: ${this.name}\nTrademark: ${this.trademark}\nModel: ${this.model}\nColor: ${this.color}\nPrice: ${this.price}\n`);
+
+  }
 }
