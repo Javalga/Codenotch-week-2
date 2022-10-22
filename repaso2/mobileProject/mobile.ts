@@ -1,5 +1,5 @@
 export class Mobile {
-  constructor(private name: string, private trademark: string, private model: string, private color: string, private price: string) {
+  constructor(private name: string, private trademark: string, private model: string, private color: string, private price: number) {
     this.name = name;
     this.trademark = trademark;
     this.model = model;
@@ -18,7 +18,7 @@ export class Mobile {
   public setColor(color: string) {
     this.color = color
   }
-  public setPrice(price: string) {
+  public setPrice(price: number) {
     this.price = price
   }
   public getName() {

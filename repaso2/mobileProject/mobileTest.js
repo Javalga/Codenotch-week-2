@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var mobile_1 = require("./mobile");
-var myMobile1 = new mobile_1.Mobile('Ericson', 'Huawei', 'P40', 'Black', '300$');
-var myMobile2 = new mobile_1.Mobile('Galaxy', 'Sansumg', 'S22', 'Black', '700$');
-var myMobile3 = new mobile_1.Mobile('R44', 'Nokia', 'Ericson', 'White', '500$');
+var myMobile1 = new mobile_1.Mobile('Ericson', 'Huawei', 'P40', 'Black', 300);
+var myMobile2 = new mobile_1.Mobile('Galaxy', 'Sansumg', 'S22', 'Black', 700);
+var myMobile3 = new mobile_1.Mobile('R44', 'Nokia', 'Ericson', 'White', 500);
 // console.log(myMobile1.getColor())
 // console.log(myMobile1.getModel())
 // console.log(myMobile1.getName())
