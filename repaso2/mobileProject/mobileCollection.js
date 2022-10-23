@@ -4,6 +4,7 @@ exports.MobileCollection = void 0;
 var MobileCollection = /** @class */ (function () {
     function MobileCollection(mobiles) {
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
     }
     MobileCollection.prototype.getMobiles = function () {
         return this.mobiles;
@@ -24,6 +25,13 @@ var MobileCollection = /** @class */ (function () {
             result += mobile.getPrice();
         }
         return result;
+    };
+    MobileCollection.prototype.printCollection = function () {
+        var fullString = '';
+        for (var i = 0; i < this.mobiles.length; i++) {
+            fullString += "\nThe characteristics of the mobile ".concat(this.mobiles[i].getName(), " are:\n\tName:\t").concat(this.mobiles[i].getName(), "\n\tTrademark:   ").concat(this.mobiles[i].getTrademark(), "\n\tModel:\t").concat(this.mobiles[i].getModel(), "\n\tColor:\t").concat(this.mobiles[i].getColor(), "\n\tPrice:\t").concat(this.mobiles[i].getPrice(), "\n\n");
+        }
+        return fullString;
     };
     return MobileCollection;
 }());
