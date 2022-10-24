@@ -1,8 +1,10 @@
 export const hasEven = (numbers: number[]): boolean => {
-  for (let number of numbers) {
-    if (numbers[number] % 2 === 0) {
+  let i = 0
+  while (i < numbers.length) {
+    if (numbers[i] % 2 === 0) {
       return true
     }
+    i++
   }
   return false
 }
