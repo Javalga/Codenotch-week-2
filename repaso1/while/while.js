@@ -2,11 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.hasEven = void 0;
 var hasEven = function (numbers) {
-    for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
-        var number = numbers_1[_i];
-        if (numbers[number] % 2 === 0) {
+    var i = 0;
+    while (i < numbers.length) {
+        if (numbers[i] % 2 === 0) {
             return true;
         }
+        i++;
     }
     return false;
 };
