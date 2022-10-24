@@ -39,4 +39,14 @@ export class Point {
       return 4
     }
   }
+  public calculateNearest(points: Point[]): Point {
+    let currentPoint = new Point(this.x, this.y)
+    let closestPoint = points[0]
+    for (let i = 0; i < points.length; i++) {
+      if (currentPoint.calculateDistance(points[i]) < currentPoint.calculateDistance(closestPoint)) {
+        closestPoint = points[i]
+      }
+    }
+    return closestPoint
+  }
 }
