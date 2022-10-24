@@ -18,4 +18,12 @@ export class Point {
   public toString() {
     return `(${this.x},${this.y})`
   }
+  public distanceToOrigin() {
+    let distance = Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2))
+    return distance
+  }
+  public calculateDistance(anotherPoint: Point): number {
+    let distance = Math.sqrt(Math.pow((this.x - anotherPoint.x), 2) + Math.pow((this.y - anotherPoint.y), 2))
+    return distance
+  }
 }
