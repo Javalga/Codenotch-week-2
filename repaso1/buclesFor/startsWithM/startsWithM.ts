@@ -1,12 +1,14 @@
 export const startsWithM = (names: string[]) => {
   let starts = true
-  for (let name of names) {
-    if (name[0] === 'M') {
-      continue
+  let i = 0
+  while (i < names.length) {
+    if (names[i][0] === 'M') {
+      i++
     } else {
       starts = false
+      return starts
     }
-  } return starts
+  }
 }
 
 console.log(startsWithM(['Jose', 'Maria', 'Manolo', 'Lola', 'Josefa']))
