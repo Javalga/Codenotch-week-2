@@ -28,8 +28,25 @@ var Point = /** @class */ (function () {
         return distance;
     };
     Point.prototype.calculateDistance = function (anotherPoint) {
-        var distance = Math.sqrt(Math.pow((this.x - anotherPoint.x), 2) + Math.pow((this.y - anotherPoint.y), 2));
+        var distance = Math.round(Math.sqrt(Math.pow((this.x - anotherPoint.x), 2) + Math.pow((this.y - anotherPoint.y), 2)));
         return distance;
+    };
+    Point.prototype.calculateCuadrant = function () {
+        if (this.x === 0 || this.y === 0) {
+            return 0;
+        }
+        else if (this.x > 0 && this.y > 0) {
+            return 1;
+        }
+        else if (this.x < 0 && this.y > 0) {
+            return 2;
+        }
+        else if (this.x < 0 && this.y < 0) {
+            return 3;
+        }
+        else if (this.x > 0 && this.y < 0) {
+            return 4;
+        }
     };
     return Point;
 }());

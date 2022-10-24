@@ -23,7 +23,20 @@ export class Point {
     return distance
   }
   public calculateDistance(anotherPoint: Point): number {
-    let distance = Math.sqrt(Math.pow((this.x - anotherPoint.x), 2) + Math.pow((this.y - anotherPoint.y), 2))
+    let distance = Math.round(Math.sqrt(Math.pow((this.x - anotherPoint.x), 2) + Math.pow((this.y - anotherPoint.y), 2)))
     return distance
+  }
+  public calculateCuadrant() {
+    if (this.x === 0 || this.y === 0) {
+      return 0
+    } else if (this.x > 0 && this.y > 0) {
+      return 1
+    } else if (this.x < 0 && this.y > 0) {
+      return 2
+    } else if (this.x < 0 && this.y < 0) {
+      return 3
+    } else if (this.x > 0 && this.y < 0) {
+      return 4
+    }
   }
 }

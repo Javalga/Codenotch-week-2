@@ -12,3 +12,4 @@ console.log(myPoint.distanceToOrigin());
 console.log(myPoint.calculateDistance(anotherPoint));
 
 
+console.log(anotherPoint.calculateCuadrant())
